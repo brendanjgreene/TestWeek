@@ -1,0 +1,22 @@
+package testingweek;
+
+import org.junit.*;
+
+public class JunitExample {
+	
+	@BeforeClass
+	public static void init() {
+		System.out.println("Before Class");
+	}
+	@Before
+	public void setUP() {
+		System.out.println("Before");
+	}
+	@Test
+	@After
+	@AfterClass
+	
+	
+	
+
+}
