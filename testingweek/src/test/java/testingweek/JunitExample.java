@@ -38,15 +38,14 @@ public class JunitExample {
 		System.out.println("Test");
 		try {
 			TimeUnit.MILLISECONDS.sleep(1000);
-			String URL = webDriver.getCurrentUrl();
-		Assert.assertEquals("True", URL, BASE_URL);
-		WebElement searchBar = webDriver.findElement(By.cssSelector("#select2-chosen-2"));
-		searchBar.sendKeys("THE SHAFEEQ");
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+		String URL = webDriver.getCurrentUrl();
+		Assert.assertEquals("True", URL, BASE_URL);
+		WebElement searchBar = webDriver.findElement(By.cssSelector("#select2-chosen-2"));
+		searchBar.sendKeys("THE SHAFEEQ");
 
 	}
 	
